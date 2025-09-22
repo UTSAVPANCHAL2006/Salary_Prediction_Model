@@ -29,8 +29,8 @@ A machine learning project to predict salaries using multiple regression models.
 ~~~bash
 
 1.Clone the repo:
-git clone 
-cd Heart-Disease-Prediction-Model
+git clone https://github.com/UTSAVPANCHAL2006/Salary_Prediction_Model.git
+cd Salary_Prediction_Model
 
 2.Install dependencies:
 pip install -r requirements.txt
