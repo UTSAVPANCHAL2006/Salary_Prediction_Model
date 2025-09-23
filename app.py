@@ -30,7 +30,7 @@ def encode_job_title(title):
     return titles.index(title) if title in titles else 0  # Better fallback
 
 if st.button("Predict Salary"):
-    # Scale age and experience together
+
     scaled = scaler.transform([[age, experience]])
     age_scaled = scaled[0][0]
     experience_scaled = scaled[0][1]
