@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-df = pd.read_csv("/Users/utsav/Desktop/Salary Pred/Data/Salary_Data.csv")
+df = pd.read_csv("Data/Salary_Data.csv")
 
-model = joblib.load("/Users/utsav/Desktop/Salary Pred/src/RF_Salary_pred.pkl")
-scaler = joblib.load("/Users/utsav/Desktop/Salary Pred/src/scaler.pkl")
-expected_columns = joblib.load("/Users/utsav/Desktop/Salary Pred/src/columns.pkl")
+model = joblib.load("src/RF_Salary_pred.pkl")
+scaler = joblib.load("src/scaler.pkl")
+expected_columns = joblib.load("src/columns.pkl")
 
 
 st.title("💸 Salary Prediction")
