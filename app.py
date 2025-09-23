@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-df = pd.read_csv("Data/Salary_Data.csv")
+df = pd.read_csv("data/Salary_Data.csv")
 
 model = joblib.load("src/RF_Salary_pred.pkl")
 scaler = joblib.load("src/scaler.pkl")
