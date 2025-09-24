@@ -1,43 +1,72 @@
-# Salary Prediction Model
+# 💼 Salary Prediction Model 
 
-A machine learning project to predict salaries using multiple regression models. This project allows users to explore different models like Linear Regression, Random Forest, Decision Tree, and Gradient Boosting, and interact with the model through a Streamlit web application.
+A machine learning project that predicts salaries based on employee attributes using multiple regression algorithms. The project includes an **interactive Streamlit web app** for real-time predictions.  
 
-## Features
+## ✨ Key Features  
+- Predict salaries using different ML models:  
+  - Linear Regression  
+  - Decision Tree  
+  - Random Forest  
+  - Gradient Boosting  
+- Interactive **Streamlit app** for live salary prediction  
+- Data visualization for insights and feature analysis  
+- Model saving & loading with **joblib**  
 
-- Predict salaries using various machine learning models:
-  - Linear Regression (LR)
-  - Random Forest (RF)
-  - Decision Tree (DT)
-  - Gradient Boosting (GB)
-- Interactive Streamlit app for easy predictions
-- Visualizations using Matplotlib and Seaborn
-- Model persistence with Joblib
+---
+## 🛠️ Tech Stack  
+- **Language**: Python  
+- **Libraries**: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Joblib, Streamlit  
 
-## Technologies Used
+---
 
-- **Programming Language:** Python  
-- **Libraries & Frameworks:** 
-  - Streamlit
-  - Pandas
-  - NumPy
-  - Scikit-learn
-  - Joblib
-  - Matplotlib
-  - Seaborn
-    
-## ⚡ How to Run
-~~~bash
+## 📂 Project Structure 
+Salary_Prediction_Model/
+│
 
-1.Clone the repo:
+|── data/ #Dataset(s)
+
+|── src/ # Source code for preprocessing & modeling
+
+|── app.py # Streamlit app entry point
+
+|── requirements.txt # Project dependencies
+
+|── README.md # Project documentation
+
+## ⚙️ Installation  
+
+ 
+```bash
+1)Clone the repository:
 git clone https://github.com/UTSAVPANCHAL2006/Salary_Prediction_Model.git
 cd Salary_Prediction_Model
 
-2.Install dependencies:
+
+2)Install dependencies:
 pip install -r requirements.txt
 
-3.jupyter notebook
-Run jupyter Notebook
-
-4.Run Streamlit App:
+3)Run the Streamlit App
 streamlit run app.py
- 
+```
+
+📊 Dataset & Preprocessing
+
+Dataset is stored in the data/ folder
+
+Includes cleaning, encoding categorical variables, and scaling features
+
+Ensure dataset is available before training/running the app
+
+🧠 Model Training
+
+Models implemented: Linear Regression, Decision Tree, Random Forest, Gradient Boosting
+
+Performance evaluated using metrics such as MSE ,MAE, RMSE, R²
+
+🌐 Deployment
+
+The app is deployed with Streamlit Cloud:
+
+👇🏻 Live Demo
+
+https://salarypredictionmodel-6um3ueg7f4htl2txfwcm9f.streamlit.app/
